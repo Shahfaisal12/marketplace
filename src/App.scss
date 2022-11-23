@@ -49,48 +49,59 @@ body {
 }
 
 ///////////////////////////// BASE  //////////////////////@at-root
-
-.sidebar-section {
+.base-section {
+  // position: relative;
+  background: #131722;
+}
+.Sidebar-content {
+  // position: absolute;
   width: 280px;
   background: rgba(27, 33, 48, 0.75);
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+
   .sidebar-header {
     padding: 50px 0px;
-    h5 {
-      font-weight: 700;
-    }
     .sidebar-title {
-      margin-left: 5px;
+      h5 {
+        font-weight: 700;
+        margin-left: 5px;
+      }
     }
   }
+
   ul {
     li {
       list-style: none;
-    }
-  }
-  a {
-    margin: 0px 15px 0px 15px;
-    // width: 244px;
-    border-radius: 12px;
-    padding: 12px 15px;
-    margin: 15px;
-    text-decoration: none;
-    color: #545d69;
-    &:hover {
-      background: rgba(19, 23, 34, 0.75);
-      color: #ffffff;
-    }
-    h6 {
-      padding-left: 15px;
+      a {
+        margin: 0px 15px 0px 15px;
+        border-radius: 12px;
+        padding: 12px 15px;
+        margin: 15px;
+        text-decoration: none;
+        color: #545d69;
+        &:hover {
+          background: rgba(19, 23, 34, 0.75);
+          color: #ffffff;
+        }
+        h6 {
+          padding-left: 15px;
+        }
+      }
     }
   }
 }
-
 ///////////////////////////////////////////  Main Content ////////////////////////@at-root
 
 .Main-content {
-  width: 1440px;
-  background: #131722;
-  padding: 50px 80px;
+  position: absolute;
+  height: 100vh;
+  left: 360px;
+  overflow: auto;
+  right: 0;
+  padding: 50px 0;
 }
 
 //////////////////////////// HERO SECTION ///////////////////////////////////
