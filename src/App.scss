@@ -53,6 +53,9 @@ body {
   // position: relative;
   background: #131722;
 }
+
+//////////////////  SIDEBAR .//////////////
+
 .Sidebar-content {
   // position: absolute;
   width: 280px;
@@ -92,6 +95,22 @@ body {
       }
     }
   }
+  .btn {
+    position: absolute;
+    bottom: 0;
+    background: rgba(27, 33, 48, 0.75);
+    .btn-login {
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border-radius: 12px;
+      width: 232px;
+      height: 55px;
+      padding: 12px 0px;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
 }
 ///////////////////////////////////////////  Main Content ////////////////////////@at-root
 
@@ -101,15 +120,194 @@ body {
   left: 360px;
   overflow: auto;
   right: 0;
-  padding: 50px 0;
+  padding: 50px 80px 50px 0px;
 }
 
 //////////////////////////// HERO SECTION ///////////////////////////////////
 
 .hero-section {
+  .carosel-banner {
+    margin-top: 50px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  // .carousel-indicators .active {
+  //   background: linear-gradient(99.52deg, #7A74FF -5.53%, #D895FF -5.52%, #7A74FF 111.67%) !important;
+  //   border-radius: 100px;
+  //   width: 30px;
+  //   height: 3px;
+  // }
+  .carousel-caption {
+    font-weight: 700;
+    line-height: 36px;
+    bottom: 1.25rem;
+    left: 5%;
+    text-align: start;
+    p {
+      font-weight: 400;
+      line-height: 170%;
+      letter-spacing: 0.005em;
+      color: #f4f6f9;
+    }
+    .btn {
+      padding: 0px;
+    }
+  }
   h3 {
     color: #ebeef2;
     font-weight: 700;
     font-size: 28px;
+  }
+  .this-week-lunacia {
+    margin-top: 75px;
+    h2 {
+      color: #f4f6f9;
+    }
+    h6 {
+      font-weight: 400px;
+      color: #a5abb3;
+      margin-bottom: 30px;
+    }
+    .lunacia-card {
+      background-image: url("../public/assets/lunacia-carg-bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 30px;
+      // position: absolute;
+      .card-title {
+        h6 {
+          margin: 25px 0px 5px 0px;
+          // font-weight: 600;
+          font-size: 18px;
+          color: #545d69;
+        }
+      }
+      .card-user {
+        h2 {
+          font-weight: 700;
+          color: #f4f6f9;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////  ALLL SEATS ///////////////////
+
+.all-seat {
+  margin-top: 30px;
+  .card {
+    background: rgba(27, 33, 48, 0.75);
+    border-radius: 12px;
+    .card-header {
+      border-radius: 12px 12px 0px 0px;
+      background: linear-gradient(
+        95.02deg,
+        #ff82d4 0%,
+        #1b1378 100%
+      ) !important;
+      mix-blend-mode: soft-light;
+      opacity: 0.75;
+      padding: 22px 0px 22px 30px;
+      color: #f4f6f9;
+    }
+    .card-body {
+      padding: 30px;
+    }
+
+    .allseat-card {
+      padding-left: 23px;
+      .card-title {
+        margin: 10px 0px 5px 0px;
+        color: #545d69;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .card-user {
+        font-weight: 700;
+        font-size: 24px;
+        color: #f4f6f9;
+      }
+      .card-btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//////////////// GAME SECTION ////////////
+
+.Game-section {
+  margin-top: 30px;
+  .card {
+    background: rgba(27, 33, 48, 0.75);
+    border-radius: 12px;
+    .card-header {
+      border-radius: 12px 12px 0px 0px;
+      background: linear-gradient(
+        95.02deg,
+        #ff82d4 0%,
+        #1b1378 100%
+      ) !important;
+      mix-blend-mode: soft-light;
+      opacity: 0.75;
+      padding: 22px 0px 22px 30px;
+      color: #f4f6f9;
+    }
+    .card-body {
+      padding: 30px;
+    }
+
+    .allseat-card {
+      // padding-left: 23px;
+      // margin-left: 10px;
+      .card-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #f4f6f9;
+      }
+      .card-content {
+        margin-left: 10px;
+      }
+      .card-user {
+        font-weight: 700;
+        font-size: 24px;
+        color: #f4f6f9;
+      }
+      .card-btn a:nth-child(1) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////      ALL GMAE COMPONENT     ///////////////////////////////////////////
+
+.all-game-section {
+  h3 {
+    font-weight: 700;
+    line-height: 130%;
+    color: #ebeef2;
+  }
+  .card {
+    margin: 50px 0px 30px 0px;
+    background: #1b2130;
+    opacity: 0.75;
+    border-radius: 12px;
+    .card-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: #f4f6f9;
+    }
+    .card-text {
+      font-weight: 500;
+      line-height: 170%;
+      letter-spacing: 0.005em;
+      color: #545d69;
+    }
   }
 }
