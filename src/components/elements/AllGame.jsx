@@ -4,32 +4,32 @@ import Card from 'react-bootstrap/Card';
 
 const allGameData = [{
     img: 'assets/allgame/card1.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 }, {
     img: 'assets/allgame/card2.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 }, {
     img: 'assets/allgame/card3.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 }, {
     img: 'assets/allgame/card4.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 }, {
     img: 'assets/allgame/card5.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 }, {
     img: 'assets/allgame/card6.png',
-    titel: 'Axie Infinity: Origins',
+    title: 'Axie Infinity: Origins',
     text: 'Sky Mavis'
 
 },]

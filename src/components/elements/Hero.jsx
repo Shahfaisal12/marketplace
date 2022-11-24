@@ -121,7 +121,6 @@ const Hero = () => {
                   </div>
                 </Carousel.Caption>
               </Carousel.Item>
-
             </Carousel>
           </div>
         </div>
@@ -222,6 +221,7 @@ const Hero = () => {
             </Card.Body>
           </Card>
         </div>
+        
       </div>
     </div>
   )

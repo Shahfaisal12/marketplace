@@ -28,7 +28,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='d-flex'>
+              <Link to='/marketplace' className='d-flex'>
                 <ShoppingBagSharpIcon fontSize="small" />
                 <h6>Marketplace</h6>
               </Link>
@@ -40,7 +40,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className='d-flex'>
+              <Link to='/gamedetail' className='d-flex'>
                 <StarRoundedIcon fontSize="small" />
                 <h6>Lunacian Express</h6>
               </Link>
