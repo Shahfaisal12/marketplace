@@ -74,13 +74,13 @@ const Hero = () => {
                 <Carousel.Caption>
                   <h2 className='mb-0'>A Nation Gathers!</h2>
                   <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex flex-wrap">
-                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
-                      <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
-                    </div>
-                    <div className="btn-buy">
+                  <div className="d-flex flex-wrap">
+                    {/* <div > */}
+                      <a href="/" className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}><img src="assets/btn-ticket.svg" alt="" /></a>
+                    {/* </div> */}
+                    {/* <div className="btn-buy"> */}
                       <a href="/"><img src="assets/btn-buy.svg" alt="" /></a>
-                    </div>
+                    {/* </div> */}
                   </div>
                 </Carousel.Caption>
               </Carousel.Item>
