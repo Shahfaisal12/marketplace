@@ -9,7 +9,7 @@ const overallCardData = [{
     cardImage: 'assets/axies-stats-small.svg',
     cardName: 'Total Owners',
     cardUser: '2,050,716',
-    border: 'assets/vertical-Line.svg'
+    border: ''
 }, {
     cardImage: 'assets/meo-token.svg',
     cardName: 'Total Volume (ETH)',
