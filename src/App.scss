@@ -453,8 +453,45 @@ body {
 
   .top-sale-sec {
     margin-top: 50px;
+    .card {
+      background: #1b2130;
+      opacity: 0.75;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      .borderss {
+        padding: 4px;
+        // gap: 5px;
+        // width: 81px;
+        height: 28px;
+        // border: 1px solid #76e234;
+        border-radius: 6px;
+        margin-bottom: 14px;
+        p {
+          font-weight: 600;
+          font-size: 12px;
+          // color: #76e234;
+        }
+      }
+      .card-title {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.008em;
+        color: #ffffff;
+      }
+      .card-text {
+        font-weight: 500;
+        font-size: 12px;
+        color: #a5abb3;
+      }
+      .right-content {
+        .card-text {
+          color: #dadee3 !important;
+        }
+      }
+    }
   }
   .Recent-sale-sec {
+    margin-top: 50px;
     .mr-32 {
       margin-right: 32px;
     }
@@ -493,4 +530,15 @@ body {
       }
     }
   }
+}
+
+///////////////////////////  RECENT LISTING ////////////////////////////
+
+.recent-list {
+  margin-top: 50px;
+}
+
+
+.border-vertical-linereee{
+  
 }
