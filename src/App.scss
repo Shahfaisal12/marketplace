@@ -3,6 +3,10 @@
 body {
   font-family: Poppins;
 }
+
+.carousel-indicators {
+  bottom: -47px !important;
+}
 /////////////////////////////////// TOOGLER ICON COLOR CHANGE COLOR //////////////////////////
 
 .navbar .navbar-toggler-icon {
@@ -51,7 +55,7 @@ body {
 ///////////////////////////// BASE  //////////////////////@at-root
 .base-section {
   // position: relative;
-  background: #131722;
+  background: #131722 !important;
 }
 
 //////////////////  SIDEBAR .//////////////
@@ -121,6 +125,7 @@ body {
   overflow: auto;
   right: 0;
   padding: 50px 80px 50px 0px;
+  background: #131722;
 }
 
 //////////////////////////// HERO SECTION ///////////////////////////////////
@@ -128,17 +133,12 @@ body {
 .hero-section {
   .carosel-banner {
     margin-top: 50px;
+    
   }
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
   }
-  // .carousel-indicators .active {
-  //   background: linear-gradient(99.52deg, #7A74FF -5.53%, #D895FF -5.52%, #7A74FF 111.67%) !important;
-  //   border-radius: 100px;
-  //   width: 30px;
-  //   height: 3px;
-  // }
   .carousel-caption {
     font-weight: 700;
     line-height: 36px;
@@ -347,7 +347,7 @@ body {
   }
 
   .nav-section {
-    margin-top: 50px;
+    margin-top: 80px;
 
     .next-arrow {
       color: #ebeef2;
@@ -538,15 +538,15 @@ body {
   margin-top: 50px;
 }
 
-
-.border-vertical-linereee{
-  // width: 63px;
-height: 78px;
-
-// transform: rotate(90deg);
-border-left: 1px solid;
-border-image-source: linear-gradient(95.02deg, #FF82D4 0%, #1B1378 100%);
+/////////////////////////////  MEDIA Query //////////////////////////
 
 
-
+@media only screen and (max-width: 600px) {
+ .Main-content{
+    left: 0px;
+    padding: 30px 0px 0px 0px;
+ }
+ .all-game-section .card {
+  margin: 15px 0px 0px
+ }
 }

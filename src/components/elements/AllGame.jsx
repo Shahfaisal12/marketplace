@@ -36,8 +36,9 @@ const allGameData = [{
 
 const AllGame = () => {
     return (
-        <div className="all-game-section">
-            <div className="title">
+        <div className="all-game-section pb-4">
+           <div className="container">
+           <div className="title">
                 <h3>All Games</h3>
             </div>
             <div className="row">
@@ -59,6 +60,7 @@ const AllGame = () => {
                     })
                 }
             </div>
+           </div>
         </div>
     )
 }

@@ -25,7 +25,9 @@ const GameDetail = () => {
     return (
 
         <div className="game-detail-section all-game-section ">
-            <div className="banner">
+           <div className="container">
+
+           <div className="banner">
                 <div className="d-flex align-items-baseline">
                     <div className="heading">
                         <h3 className='mb-1'>Axie Infinity: Origins</h3>
@@ -102,7 +104,7 @@ const GameDetail = () => {
                             <Card>
                                 <Card.Header as="h2"><div className="d-flex justify-content-between">
                                     <h2>Game Info</h2>
-                                    <div className="icons d-flex align-items-center">
+                                    <div className="icons d-flex flex-wrap align-items-center">
                                         <h6 className='mb-0'>Collectibles</h6><BsFillInfoCircleFill className='mx-1 info-icon' />
                                         <img src="assets/gamedetail/tab-axie.svg" className='img-fluid' alt="" />
                                         <img src="assets/gamedetail/collectibles-ac.svg" className='img-fluid' alt="" />
@@ -123,6 +125,7 @@ const GameDetail = () => {
                     <div className="tab-pane fade text-white" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Empty</div>
                 </div>
             </div>
+           </div>
         </div>
 
     )

@@ -69,12 +69,13 @@ const Hero = () => {
                   className="d-block w-100"
                   src="assets/banner.png"
                   alt="First slide"
+                  style={{ height: '346px' }}
                 />
                 <Carousel.Caption>
                   <h2 className='mb-0'>A Nation Gathers!</h2>
                   <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex">
-                    <div className="btn-ticket" style={{ marginRight: '20px' }}>
+                  <div className="btn d-flex flex-wrap">
+                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
                       <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
                     </div>
                     <div className="btn-buy">
@@ -87,13 +88,14 @@ const Hero = () => {
                 <img
                   className="d-block w-100"
                   src="assets/banner.png"
-                  alt="First slide"
+                  alt="Second slide"
+                  style={{ height: '346px' }}
                 />
                 <Carousel.Caption>
                   <h2 className='mb-0'>A Nation Gathers!</h2>
                   <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex">
-                    <div className="btn-ticket" style={{ marginRight: '20px' }}>
+                  <div className="btn d-flex flex-wrap">
+                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
                       <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
                     </div>
                     <div className="btn-buy">
@@ -106,13 +108,14 @@ const Hero = () => {
                 <img
                   className="d-block w-100"
                   src="assets/banner.png"
-                  alt="First slide"
+                  alt="Third slide"
+                  style={{ height: '346px' }}
                 />
                 <Carousel.Caption>
                   <h2 className='mb-0'>A Nation Gathers!</h2>
                   <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex">
-                    <div className="btn-ticket" style={{ marginRight: '20px' }}>
+                  <div className="btn d-flex flex-wrap">
+                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
                       <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
                     </div>
                     <div className="btn-buy">
@@ -124,14 +127,15 @@ const Hero = () => {
             </Carousel>
           </div>
         </div>
+
+        {/* ///////////////////////////// LUNACIA SECTION /////////////////// */}
         <div className="this-week-lunacia">
           <h2>This week in Lunacia</h2>
           <h6>General stats from the past 7 days in the Axie Infinity universe.</h6>
-
           <div className="row">
             {
               lunaciaCardData.map((items) =>
-                <div className="col-md-4" key={items.id}>
+                <div className="col-md-4 mb-3 mb-md-0" key={items.id}>
                   <div className="lunacia-card">
                     <div className="card-img">
                       <img src={items.cardImage} alt="" />
@@ -150,6 +154,7 @@ const Hero = () => {
           </div>
         </div>
 
+{/* /////////////////// ALL SEAT SECTION ///////////////////////// */}
         <div className="all-seat">
           <Card>
             <Card.Header as="h2">Overall stats</Card.Header>
@@ -158,7 +163,7 @@ const Hero = () => {
                 {
                   overallCardData.map((item) => {
                     return (
-                      <div className="col-md-3" key={item.id}>
+                      <div className="col-md-3 mb-4 mb-md-0" key={item.id}>
                         <div className="d-flex align-items-end">
                           <div className="card-vertical-line">
                             <img src={item.border} alt='' />
@@ -184,7 +189,7 @@ const Hero = () => {
           </Card>
         </div>
 
-
+{/* ///////////////// GAME SECTION /////////////////// */}
         <div className="Game-section">
           <Card>
             <Card.Header as="h2">Games</Card.Header>
@@ -193,15 +198,15 @@ const Hero = () => {
                 {
                   gameCard.map((item) => {
                     return (
-                      <div className="col-md-4" key={item.id}>
+                      <div className="col-md-4 p-0 mb-4 mb-md-0" key={item.id}>
                         <div className="d-flex">
                           <div className="card-vertical-line">
                             <img src={item.border} alt='' />
                           </div>
                           <div className="allseat-card d-flex align-items-center">
-                            <div className="card-img">
-                              <img src={item.cardImage} alt="" />
-                            </div>
+                            {/* <div className="card-img"> */}
+                              <img src={item.cardImage} alt="" className='img-fluid' />
+                            {/* </div> */}
                             <div className="card-content">
                               <div className="card-title">
                                 <h6 className='mb-0'>{item.cardName}</h6>
@@ -221,7 +226,7 @@ const Hero = () => {
             </Card.Body>
           </Card>
         </div>
-        
+
       </div>
     </div>
   )
