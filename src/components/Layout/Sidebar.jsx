@@ -5,7 +5,7 @@ import PlayCircleRoundedIcon from '@mui/icons-material/PlayCircleRounded';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import { Link } from 'react-router-dom';
-import {FiLogIn} from 'react-icons/fi';
+import { FiLogIn } from 'react-icons/fi';
 
 const Sidebar = () => {
   return (
@@ -54,9 +54,9 @@ const Sidebar = () => {
           </ul>
         </div>
         <div className="btn">
-        <button to='' className="btn-login">
-          login <FiLogIn />
-        </button>
+          <button className="btn-login">
+            login <FiLogIn />
+          </button>
         </div>
       </div>
     </>
