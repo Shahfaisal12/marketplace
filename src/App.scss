@@ -89,15 +89,16 @@ body {
         margin: 15px;
         text-decoration: none;
         color: #545d69;
-        &:hover {
-          background: rgba(19, 23, 34, 0.75);
-          color: #ffffff;
-        }
+
         h6 {
           padding-left: 15px;
           margin-bottom: 0px;
         }
       }
+    }
+    .active > a {
+      background: rgba(19, 23, 34, 0.75);
+      color: #ffffff;
     }
   }
   .btn {
@@ -154,6 +155,31 @@ body {
     .btn {
       padding: 0px;
     }
+    .btn-ticket {
+      background: linear-gradient(95.02deg, #ff82d4 0%, #1b1378 100%);
+      border-radius: 8px;
+      width: 148px;
+      height: 47px;
+      padding: 10px 32px;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .btn-ticket2 {
+      padding: 10px 32px;
+      gap: 10px;
+      width: 148px;
+      height: 47px;
+      background: rgba(17, 24, 39, 0.25);
+      border-radius: 8px;
+      color: #ffffff;
+      border: 2px solid #a583ff;
+      font-weight: 600;
+      font-size: 16px;
+    }
   }
   h3 {
     color: #ebeef2;
@@ -206,10 +232,10 @@ body {
       border-radius: 12px 12px 0px 0px;
       background: linear-gradient(
         95.02deg,
-        #ff82d4 0%,
-        #1b1378 100%
+        #ff82d441 0%,
+        #1b137841 100%
       ) !important;
-      mix-blend-mode: soft-light;
+      // mix-blend-mode: soft-light;
       opacity: 0.75;
       padding: 22px 30px;
       color: #f4f6f9;
@@ -249,10 +275,10 @@ body {
       border-radius: 12px 12px 0px 0px;
       background: linear-gradient(
         95.02deg,
-        #ff82d4 0%,
-        #1b1378 100%
+        #ff82d441 0%,
+        #1b137841 100%
       ) !important;
-      mix-blend-mode: soft-light;
+      // mix-blend-mode: soft-light;
       opacity: 0.75;
       padding: 22px 0px 22px 30px;
       color: #f4f6f9;
@@ -385,10 +411,10 @@ body {
       border-radius: 12px 12px 0px 0px;
       background: linear-gradient(
         95.02deg,
-        #ff82d4 0%,
-        #1b1378 100%
+        #ff82d441 0%,
+        #1b137841 100%
       ) !important;
-      mix-blend-mode: soft-light;
+      // mix-blend-mode: soft-light;
       opacity: 0.75;
       padding: 22px 22px 22px 30px;
       color: #f4f6f9;
@@ -435,12 +461,12 @@ body {
 
 .marketplace-section {
   .all-seat .card .card-header {
-    height: 80px;
+    min-height: 80px;
   }
   .nav-pills .nav-link {
     color: #545d69;
     padding: 10px 16px;
-    height: 47px;
+    // height: 47px;
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;

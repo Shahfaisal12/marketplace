@@ -4,6 +4,21 @@ import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
 
+const carouselData = [{
+  img: 'assets/banner.png',
+  title: 'A Nation Gathers!',
+  content: 'Origin is now available to play via Mavis Hub!',
+}, {
+  img: 'assets/banner.png',
+  title: 'A Nation Gathers!',
+  content: 'Origin is now available to play via Mavis Hub!',
+}, {
+  img: 'assets/banner.png',
+  title: 'A Nation Gathers!',
+  content: 'Origin is now available to play via Mavis Hub!',
+}]
+
+
 const lunaciaCardData = [{
   cardImage: 'assets/axises.svg',
   cardName: 'New Axies',
@@ -64,66 +79,28 @@ const Hero = () => {
           </div>
           <div className="carosel-banner">
             <Carousel fade>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="assets/banner.png"
-                  alt="First slide"
-                  style={{ height: '346px' }}
-                />
-                <Carousel.Caption>
-                  <h2 className='mb-0'>A Nation Gathers!</h2>
-                  <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="d-flex flex-wrap">
-                    {/* <div > */}
-                      <a href="/" className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}><img src="assets/btn-ticket.svg" alt="" /></a>
-                    {/* </div> */}
-                    {/* <div className="btn-buy"> */}
-                      <a href="/"><img src="assets/btn-buy.svg" alt="" /></a>
-                    {/* </div> */}
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="assets/banner.png"
-                  alt="Second slide"
-                  style={{ height: '346px' }}
-                />
-                <Carousel.Caption>
-                  <h2 className='mb-0'>A Nation Gathers!</h2>
-                  <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex flex-wrap">
-                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
-                      <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
-                    </div>
-                    <div className="btn-buy">
-                      <a href="/"><img src="assets/btn-buy.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="assets/banner.png"
-                  alt="Third slide"
-                  style={{ height: '346px' }}
-                />
-                <Carousel.Caption>
-                  <h2 className='mb-0'>A Nation Gathers!</h2>
-                  <p>Origin is now available to play via Mavis Hub!</p>
-                  <div className="btn d-flex flex-wrap">
-                    <div className="btn-ticket mb-3 mb-md-0" style={{ marginRight: '20px' }}>
-                      <a href="/"><img src="assets/btn-ticket.svg" alt="" /></a>
-                    </div>
-                    <div className="btn-buy">
-                      <a href="/"><img src="assets/btn-buy.svg" alt="" /></a>
-                    </div>
-                  </div>
-                </Carousel.Caption>
-              </Carousel.Item>
+              {
+                carouselData.map((items) => {
+                  return (
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src={items.img}
+                        alt="First slide"
+                        style={{ height: '346px' }}
+                      />
+                      <Carousel.Caption>
+                        <h2 className='mb-0'>{items.title}</h2>
+                        <p>{items.content}</p>
+                        <div className="d-flex flex-wrap">
+                          <button className="btn-ticket mb-3 mb-md-0 d-flex align-items-center justify-content-center" style={{ marginRight: '20px' }}>Buy Ticket</button>
+                          <button className='btn-ticket2 d-flex align-items-center justify-content-center'>Buy Ticket</button>
+                        </div>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  );
+                })
+              }
             </Carousel>
           </div>
         </div>
@@ -154,7 +131,7 @@ const Hero = () => {
           </div>
         </div>
 
-{/* /////////////////// ALL SEAT SECTION ///////////////////////// */}
+        {/* /////////////////// ALL SEAT SECTION ///////////////////////// */}
         <div className="all-seat">
           <Card>
             <Card.Header as="h2">Overall stats</Card.Header>
@@ -189,7 +166,7 @@ const Hero = () => {
           </Card>
         </div>
 
-{/* ///////////////// GAME SECTION /////////////////// */}
+        {/* ///////////////// GAME SECTION /////////////////// */}
         <div className="Game-section">
           <Card>
             <Card.Header as="h2">Games</Card.Header>
@@ -200,13 +177,11 @@ const Hero = () => {
                     return (
                       <div className="col-md-4 p-0 mb-4 mb-md-0" key={item.id}>
                         <div className="d-flex">
-                          <div className="card-vertical-line">
-                            <img src={item.border} alt='' />
+                          <div className="card-vertical-line d-flex align-items-end">
+                            <img src={item.border} alt='' style={{ marginRight: '15px' }} />
                           </div>
                           <div className="allseat-card d-flex align-items-center">
-                            {/* <div className="card-img"> */}
-                              <img src={item.cardImage} alt="" className='img-fluid' />
-                            {/* </div> */}
+                            <img src={item.cardImage} alt="" className='img-fluid' />
                             <div className="card-content">
                               <div className="card-title">
                                 <h6 className='mb-0'>{item.cardName}</h6>
@@ -226,7 +201,6 @@ const Hero = () => {
             </Card.Body>
           </Card>
         </div>
-
       </div>
     </div>
   )

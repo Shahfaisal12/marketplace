@@ -21,7 +21,7 @@ const Sidebar = () => {
         </div>
         <div className="menu">
           <ul className='p-0'>
-            <li>
+            <li className='active'>
               <Link to='/' className='d-flex'>
                 <HomeSharpIcon fontSize="small" />
                 <h6>Home</h6>
