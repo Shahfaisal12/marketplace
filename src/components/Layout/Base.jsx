@@ -44,7 +44,7 @@ const Base = (props) => {
         </div>
         <div className='Main-content'>
           <div className="container">
-          <div className='mb-2  d-block d-md-none '>{/* */}
+          <div className='mb-2 d-block d-md-none '>
             {['left'].map((anchor) => (
               <React.Fragment key={anchor}>
                 <MenuIcon onClick={toggleDrawer(anchor, true)} className='text-white' />
